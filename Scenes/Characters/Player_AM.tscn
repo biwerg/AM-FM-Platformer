@@ -133,15 +133,16 @@ position_smoothing_enabled = true
 [node name="InputComponent" parent="." instance=ExtResource("4_63owi")]
 
 [node name="MovementComponent" parent="." instance=ExtResource("5_mq2vs")]
-speed = 300.0
-groundAccelSpeed = 18.0
-groundDecelSpeed = 24.0
-airAccelSpeed = 30.0
-airDecelSpeed = 9.0
+speed = 160.0
+groundAccelSpeed = 10.0
+groundDecelSpeed = 16.0
+airAccelSpeed = 16.0
+airDecelSpeed = 5.0
 
 [node name="AnimationComponent" parent="." node_paths=PackedStringArray("sprite") instance=ExtResource("6_d0jry")]
 sprite = NodePath("../AnimatedSprite2D")
 
 [node name="DashComponent" parent="." instance=ExtResource("8_0ek76")]
+dashVelocity = 320.0
 
 [node name="AdvancedJumpComponent" parent="." instance=ExtResource("8_i33sb")]
