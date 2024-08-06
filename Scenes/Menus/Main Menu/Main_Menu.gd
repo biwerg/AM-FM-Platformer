@@ -3,4 +3,4 @@ extends Node2D
 
 
 func _on_button_pressed():
-	get_tree().change_scene_to_file("res://Scenes/Game/World/World.tscn")
+	get_tree().change_scene_to_file("res://Scenes/Game/World 1/Game.tscn")
