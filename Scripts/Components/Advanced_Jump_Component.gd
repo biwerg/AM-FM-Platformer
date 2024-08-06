@@ -7,6 +7,7 @@ extends Node
 
 @export_subgroup("Settings")
 @export var jumpVelocity: float = -400
+@export var jumpCancel: float = .5
 
 var isGoingUp: bool = false
 var isJumping: bool = false
@@ -41,7 +42,7 @@ func handle_jump_buffer(body: CharacterBody2D, isJump: bool) -> void:
 
 func handle_variable_jump_height(body: CharacterBody2D, jumpReleased: bool) -> void:
 	if jumpReleased and isGoingUp:
-		body.velocity.y = 0
+		body.velocity.y *= jumpCancel
 
 func has_just_stepped_off_ledge(body: CharacterBody2D) -> bool:
 	return not body.is_on_floor() and lastFrameOnFloor and not isJumping
