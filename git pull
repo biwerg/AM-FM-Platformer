@@ -1,0 +1,40 @@
+[33mcommit bf3c505e50ab5907d5fa7be7c8336a65bc4b522b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mattack[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Merge: ce05967 be04bcb
+Author: Garrett Biwer <114532178+biwerg@users.noreply.github.com>
+Date:   Mon Aug 5 21:22:30 2024 -0700
+
+    Merge pull request #1 from biwerg/player_dash
+    
+    Advanced Movement
+
+[33mcommit be04bcba06e9b10979fd54fb7791cd8ef3d68893[m[33m ([m[1;31morigin/player_dash[m[33m)[m
+Author: biwerg <biwerg@oregonstate.edu>
+Date:   Mon Aug 5 21:15:44 2024 -0700
+
+    Added improved physics
+
+[33mcommit 1d234b101d9522dd40ce6e34fcebde4b4449d8f5[m
+Author: biwerg <biwerg@oregonstate.edu>
+Date:   Mon Aug 5 19:12:00 2024 -0700
+
+    Added open source tile assets
+    
+    Added temporary tile assets for early stage game testing and level building
+
+[33mcommit ce0596711c1e9aa7b3cb5d42732c5bcbd91323f9[m[33m ([m[1;32mpppoopoo[m[33m)[m
+Author: biwerg <biwerg@oregonstate.edu>
+Date:   Sun Aug 4 20:56:40 2024 -0700
+
+    Updated AM Sprite to v4
+
+[33mcommit 26253ba80d83c97f6cb2ed6da7013cc77a46f8dd[m
+Author: biwerg <biwerg@oregonstate.edu>
+Date:   Sun Aug 4 19:11:17 2024 -0700
+
+    Added Idle animation and basic controls
+
+[33mcommit 56666f31e7680cbd1f9def21b2a95469391646de[m
+Author: biwerg <biwerg@oregonstate.edu>
+Date:   Fri Aug 2 14:31:12 2024 -0700
+
+    Added Intial Files

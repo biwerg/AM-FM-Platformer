@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://c6qpdoiudojls"]
+[gd_scene load_steps=9 format=3 uid="uid://c6qpdoiudojls"]
 
 [ext_resource type="Script" path="res://Scripts/Game/Game.gd" id="1_wvaal"]
 [ext_resource type="Texture2D" uid="uid://cqxdelkqkjhv7" path="res://Assets/Environment/Sunnyland/Tilesets/tileset.png" id="2_52vge"]
-[ext_resource type="PackedScene" uid="uid://b2djn3gdm4vs5" path="res://Scenes/Characters/Player_AM.tscn" id="3_wkqj1"]
+[ext_resource type="PackedScene" uid="uid://b2djn3gdm4vs5" path="res://Scenes/Characters/Player/Player_AM.tscn" id="3_wkqj1"]
 [ext_resource type="Script" path="res://addons/ProCam2D/scripts/pcam_target.gd" id="4_e5ruv"]
 [ext_resource type="Script" path="res://addons/ProCam2D/scripts/procam2d.gd" id="5_1x0cr"]
+[ext_resource type="PackedScene" uid="uid://da1bsrd8yps0i" path="res://Scenes/Characters/Enemy/Roomba_Forklift.tscn" id="6_6dhaa"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fdtbw"]
 resource_name = "Sunnyland Tiles"
@@ -510,3 +511,7 @@ use_h_margins = false
 use_v_margins = false
 working_radius = 2000.0
 global_debug_draw = false
+
+[node name="Roomba_Forklift" parent="." instance=ExtResource("6_6dhaa")]
+z_index = -1
+position = Vector2(1050, 166)
