@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://b2djn3gdm4vs5"]
+[gd_scene load_steps=25 format=3 uid="uid://b2djn3gdm4vs5"]
 
 [ext_resource type="Script" path="res://Scripts/Characters/Player_AM.gd" id="1_t7k8x"]
 [ext_resource type="Texture2D" uid="uid://8plof6eq3e6i" path="res://Assets/Sprites/Characters/AM_Idle_v4.png" id="2_wcu23"]
@@ -101,8 +101,17 @@ animations = [{
 "speed": 8.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_li7wg"]
-size = Vector2(24, 44)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i5jte"]
+size = Vector2(22, 44)
+
+[sub_resource type="Gradient" id="Gradient_w34mp"]
+offsets = PackedFloat32Array(0, 0.701299)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_pj1q1"]
+gradient = SubResource("Gradient_w34mp")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
 
 [node name="AM" type="CharacterBody2D" node_paths=PackedStringArray("gravityComponent", "inputComponent", "movementComponent", "animationComponent", "jumpComponent", "dashComponent")]
 script = ExtResource("1_t7k8x")
@@ -121,7 +130,8 @@ autoplay = "Idle"
 metadata/_edit_lock_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_li7wg")
+visible = false
+shape = SubResource("RectangleShape2D_i5jte")
 metadata/_edit_lock_ = true
 
 [node name="GravityComponent" parent="." instance=ExtResource("3_b5sfy")]
@@ -142,3 +152,10 @@ sprite = NodePath("../AnimatedSprite2D")
 dashVelocity = 320.0
 
 [node name="AdvancedJumpComponent" parent="." instance=ExtResource("8_i33sb")]
+
+[node name="PointLight2D2" type="PointLight2D" parent="."]
+scale = Vector2(8, 8)
+color = Color(0.909804, 0.686275, 0.372549, 1)
+energy = 0.7
+shadow_enabled = true
+texture = SubResource("GradientTexture2D_pj1q1")
