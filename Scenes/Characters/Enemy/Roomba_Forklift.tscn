@@ -1,0 +1,70 @@
+[gd_scene load_steps=11 format=3 uid="uid://da1bsrd8yps0i"]
+
+[ext_resource type="Texture2D" uid="uid://bcu30f3bfll5l" path="res://Assets/Sprites/Characters/Roomba_Forklift.png" id="1_e3u1d"]
+[ext_resource type="Script" path="res://Scenes/Characters/Enemy/Roomba.gd" id="1_vi0nh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vo5by"]
+atlas = ExtResource("1_e3u1d")
+region = Rect2(0, 0, 41, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3h4oj"]
+atlas = ExtResource("1_e3u1d")
+region = Rect2(41, 0, 41, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d6wke"]
+atlas = ExtResource("1_e3u1d")
+region = Rect2(82, 0, 41, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ibcm1"]
+atlas = ExtResource("1_e3u1d")
+region = Rect2(123, 0, 41, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ex3kd"]
+atlas = ExtResource("1_e3u1d")
+region = Rect2(164, 0, 41, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aht36"]
+atlas = ExtResource("1_e3u1d")
+region = Rect2(205, 0, 41, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4rjur"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vo5by")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3h4oj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d6wke")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ibcm1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ex3kd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aht36")
+}],
+"loop": true,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_alfpr"]
+size = Vector2(38, 11)
+
+[node name="Roomba_Forklift" type="CharacterBody2D"]
+script = ExtResource("1_vi0nh")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_4rjur")
+animation = &"new_animation"
+frame = 4
+frame_progress = 0.673932
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-2, 8.5)
+shape = SubResource("RectangleShape2D_alfpr")
