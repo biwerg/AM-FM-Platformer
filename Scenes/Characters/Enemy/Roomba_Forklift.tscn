@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://da1bsrd8yps0i"]
 
 [ext_resource type="Texture2D" uid="uid://bcu30f3bfll5l" path="res://Assets/Sprites/Characters/Roomba_Forklift.png" id="1_e3u1d"]
-[ext_resource type="Script" path="res://Scenes/Characters/Enemy/Roomba.gd" id="1_vi0nh"]
+[ext_resource type="Script" path="res://Scripts/Characters/Enemy/Roomba.gd" id="1_vi0nh"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vo5by"]
 atlas = ExtResource("1_e3u1d")

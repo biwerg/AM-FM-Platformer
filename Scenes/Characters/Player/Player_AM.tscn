@@ -1,6 +1,6 @@
 [gd_scene load_steps=23 format=3 uid="uid://b2djn3gdm4vs5"]
 
-[ext_resource type="Script" path="res://Scripts/Characters/Player_AM.gd" id="1_t7k8x"]
+[ext_resource type="Script" path="res://Scripts/Characters/Player/Player_AM.gd" id="1_t7k8x"]
 [ext_resource type="Texture2D" uid="uid://8plof6eq3e6i" path="res://Assets/Sprites/Characters/AM_Idle_v4.png" id="2_wcu23"]
 [ext_resource type="PackedScene" uid="uid://drg63gk803xom" path="res://Scenes/Components/Gravity_Component.tscn" id="3_b5sfy"]
 [ext_resource type="PackedScene" uid="uid://2662gvx768bp" path="res://Scenes/Components/Input_Component.tscn" id="4_63owi"]
