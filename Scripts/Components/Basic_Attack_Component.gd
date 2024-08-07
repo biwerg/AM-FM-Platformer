@@ -2,9 +2,8 @@ class_name BasicAttackComponent
 extends Node
 
 @export_subgroup("Nodes")
-var attackTimer: Timer
+@export var attackTimer: Timer
 
-@export_subgroup("Settings")
 
 var isAttacking: bool = false
 var canAttack: bool = false

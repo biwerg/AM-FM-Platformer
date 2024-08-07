@@ -1,9 +1,10 @@
 [gd_scene load_steps=2 format=3 uid="uid://b1iolrtnqet48"]
 
-[ext_resource type="Script" path="res://Scenes/Components/Basic_Attack_Component.gd" id="1_fhuy4"]
+[ext_resource type="Script" path="res://Scripts/Components/Basic_Attack_Component.gd" id="1_fhuy4"]
 
-[node name="BasicAttackComponent" type="Node"]
+[node name="BasicAttackComponent" type="Node" node_paths=PackedStringArray("attackTimer")]
 script = ExtResource("1_fhuy4")
+attackTimer = NodePath("Timer")
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 0.5

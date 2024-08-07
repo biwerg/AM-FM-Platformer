@@ -7,6 +7,7 @@ extends CharacterBody2D
 @export var animationComponent: AnimationComponent
 @export var jumpComponent: AdvancedJumpComponent
 @export var dashComponent: DashComponent
+@export var basicAttackComponent: BasicAttackComponent
 
 var prevVelocity: float
 
@@ -17,6 +18,7 @@ func _physics_process(delta: float) -> void:
 	jumpComponent.handle_jump(self, inputComponent.get_jump_input(), inputComponent.get_jump_input_released())
 	animationComponent.handle_jump_animation(jumpComponent.isGoingUp, gravityComponent.isFalling)
 	dashComponent.handle_dash(self, inputComponent.inputHorizontal, inputComponent.get_dash_input())
+	basicAttackComponent.handle_basic_attack(self, inputComponent.get_attack_input())
 
 	if prevVelocity != self.velocity.x:
 		print(self.velocity.x)

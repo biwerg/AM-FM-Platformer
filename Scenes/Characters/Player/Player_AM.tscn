@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=3 uid="uid://b2djn3gdm4vs5"]
+[gd_scene load_steps=24 format=3 uid="uid://b2djn3gdm4vs5"]
 
 [ext_resource type="Script" path="res://Scripts/Characters/Player/Player_AM.gd" id="1_t7k8x"]
 [ext_resource type="Texture2D" uid="uid://8plof6eq3e6i" path="res://Assets/Sprites/Characters/AM_Idle_v4.png" id="2_wcu23"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://d2jldgextxna" path="res://Scenes/Components/Animation_Component.tscn" id="6_d0jry"]
 [ext_resource type="PackedScene" uid="uid://cds8eeuq5lyij" path="res://Scenes/Components/Dash_Component.tscn" id="8_0ek76"]
 [ext_resource type="PackedScene" uid="uid://dya2wmbeu4vrw" path="res://Scenes/Components/Advanced_Jump_Component.tscn" id="8_i33sb"]
+[ext_resource type="PackedScene" uid="uid://b1iolrtnqet48" path="res://Scenes/Components/Basic_Attack_Component.tscn" id="9_li8cb"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xnbm8"]
 atlas = ExtResource("2_wcu23")
@@ -104,7 +105,7 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_li7wg"]
 size = Vector2(24, 44)
 
-[node name="AM" type="CharacterBody2D" node_paths=PackedStringArray("gravityComponent", "inputComponent", "movementComponent", "animationComponent", "jumpComponent", "dashComponent")]
+[node name="AM" type="CharacterBody2D" node_paths=PackedStringArray("gravityComponent", "inputComponent", "movementComponent", "animationComponent", "jumpComponent", "dashComponent", "basicAttackComponent")]
 script = ExtResource("1_t7k8x")
 gravityComponent = NodePath("GravityComponent")
 inputComponent = NodePath("InputComponent")
@@ -112,6 +113,7 @@ movementComponent = NodePath("MovementComponent")
 animationComponent = NodePath("AnimationComponent")
 jumpComponent = NodePath("AdvancedJumpComponent")
 dashComponent = NodePath("DashComponent")
+basicAttackComponent = NodePath("BasicAttackComponent")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(1, -2)
@@ -142,3 +144,5 @@ sprite = NodePath("../AnimatedSprite2D")
 dashVelocity = 320.0
 
 [node name="AdvancedJumpComponent" parent="." instance=ExtResource("8_i33sb")]
+
+[node name="BasicAttackComponent" parent="." instance=ExtResource("9_li8cb")]
