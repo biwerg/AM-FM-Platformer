@@ -124,10 +124,6 @@ metadata/_edit_lock_ = true
 shape = SubResource("RectangleShape2D_li7wg")
 metadata/_edit_lock_ = true
 
-[node name="Camera2D" type="Camera2D" parent="."]
-limit_smoothed = true
-position_smoothing_enabled = true
-
 [node name="GravityComponent" parent="." instance=ExtResource("3_b5sfy")]
 
 [node name="InputComponent" parent="." instance=ExtResource("4_63owi")]
