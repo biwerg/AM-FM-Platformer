@@ -11,7 +11,7 @@ var canAttack: bool = false
 func handle_basic_attack(body: CharacterBody2D, attack: bool):
 	if body.is_on_floor() and attackTimer.is_stopped():
 		canAttack = true
-	
+
 	if canAttack and attack:
 		canAttack = false
 		attackTimer.start()

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqxdelkqkjhv7"
-path="res://.godot/imported/tileset.png-eefd6c822d35fc7a5a026040f47a8463.ctex"
+uid="uid://vxhaae6krwuo"
+path="res://.godot/imported/tileset_Tileset_Wood_Cobble_v1.png-40dd4bf852bbae8057b1d9ab946992f0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Environment/Sunnyland/Tilesets/tileset.png"
-dest_files=["res://.godot/imported/tileset.png-eefd6c822d35fc7a5a026040f47a8463.ctex"]
+source_file="res://Assets/Environment/Experiment/Tileset_Wood_Cobble_v1/tileset_Tileset_Wood_Cobble_v1.png"
+dest_files=["res://.godot/imported/tileset_Tileset_Wood_Cobble_v1.png-40dd4bf852bbae8057b1d9ab946992f0.ctex"]
 
 [params]
 

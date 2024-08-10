@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqjkkluauoffm"
-path="res://.godot/imported/wooden-house.png-edfa93299b09908047d4cf767a889f89.ctex"
+uid="uid://ccsrsyq07e5uu"
+path="res://.godot/imported/Tileset_Green_v1.png-d0d4d1ebdc839295f585c9b5f0766c27.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Environment/Sunnyland/Props/wooden-house.png"
-dest_files=["res://.godot/imported/wooden-house.png-edfa93299b09908047d4cf767a889f89.ctex"]
+source_file="res://Assets/Environment/Experiment/Tileset_Green_v1.png"
+dest_files=["res://.godot/imported/Tileset_Green_v1.png-d0d4d1ebdc839295f585c9b5f0766c27.ctex"]
 
 [params]
 
